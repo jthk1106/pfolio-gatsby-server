@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     let email = req.body
     const msg = {
-        "personalizations":[{"to":[{"email":"thk116@gmail.com","name":"Grandmaster Jay"}],"subject":"New msg from pfolio!"}],
+        "personalizations":[{"to":[{"email":"thk116@gmail.com","name":"Jeremy Kim"}],"subject":"New msg from pfolio!"}],
         "content": [{"type": "text/plain", "value": email.message}],
         "from":{"email":email.email,"name":email.name},
         "reply_to":{"email":email.email,"name":email.name}
